@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Photo Viewer</title>
+    <link rel = "stylesheet" href="style.css"> 
+    <script src="code.js"></script>
+</head>
+
+<body>
+    <h1><u>Photo Viewer</u></h1>
+
+        <img id="myImage" src="InitialImage.jpg" alt="button">
+
+    <form>
+
+        <fieldset>
+        <legend><b>Status</b></legend>
+        Photo Being Displayed: <input type = "text" class="longtextbox" id="display"  disabled><br>
+        <div id="stat">Photo Viewer System</div>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Loading Images(Local Folder)</b></legend>
+            Photo's folder: <input type = "text" id="folder" value="umcp/">
+            Common Name: <input type = "text"  id="common" value="college"><br>
+            Start Photo Number: <input type = "text" id="num1" value="2">
+            End Photo Number: <input type = "text" id="end" value="4" ><br>
+            <input type="button" id="LLF" value="Load Photos" >
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Loading Images(JSON File)</b></legend>
+            URL: <input type="text" id="URL" value="http://www.cs.umd.edu/~nelson/classes/resources/cmsc335/images/imagesSet1.json" class="url">
+            <input type="button" id="LJ" value="Load JSON">
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Iterating</b></legend>
+            <input type="button" id="prev" value="Previous Photo" >
+            <input type="button" id="next" value="Next Photo" >
+            <input type="button" id="first" value="First Photo" >
+            <input type="button" id="last" value="Last Photo" >
+        </fieldset>
+        
+        <fieldset>
+            <legend><b>SlideShows</b></legend>
+            <input type="button" id="slide" value="SlideShow">
+            <input type="button" id="random" value="RandomSlideShow">
+            <input type="button" id="stop" value="StopSlideShow">
+        </fieldset>
+
+        <hr>
+        <input type ="reset" value="Reset Form Values">
+
+    </form>
+
+</body>
+</html>
